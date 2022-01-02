@@ -1,0 +1,577 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 4fr 6fr 15fr 3fr;
+    grid-template-areas: "logo" "place" "book-section" "functionning" "menus" "footer";
+    border: black solid 2px;
+}
+
+
+/* ************************************************************************** */
+
+
+/* SECTION LOGO */
+
+
+/* ************************************************************************** */
+
+.logo {
+    /* on donne un nom à nos zones du grid: */
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+
+/* Pour gérer le logo avec la font */
+
+.content-logo {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    max-width: 1024px;
+    min-width: 290px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Shrikhand, "Arial Black", Arial, Verdana, sans-serif;
+    height: auto;
+    border: black solid 1px;
+}
+
+.logo-oh-my-food {
+    width: 50%;
+    height: auto;
+}
+
+
+/* ************************************************************************** */
+
+
+/* SECTION LOCALISATION */
+
+
+/* ************************************************************************** */
+
+.place {
+    /* on donne un nom à nos zones du grid: */
+    grid-area: place;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: palevioletred;
+}
+
+.content-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    max-width: 1024px;
+    min-width: 290px;
+    height: auto;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    border: black solid 1px;
+    background-color: darkturquoise;
+}
+
+.map-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-map-marker-alt {
+    padding-bottom: 4px;
+}
+
+.title-map-icon {
+    padding-left: 10px;
+}
+
+
+/* ************************************************************************** */
+
+
+/* SECTION RESERVATION */
+
+
+/* ************************************************************************** */
+
+.book-section {
+    /* on donne un nom à nos zones du grid: */
+    grid-area: book-section;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.content-book-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    max-width: 1024px;
+    min-width: 290px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    border: black solid 1px;
+    background-color: plum;
+}
+
+.content-book-section h2 {
+    font-size: 25px;
+}
+
+.content-book-section p {
+    text-align: center;
+    font-weight: 100;
+}
+
+.text-book-section {
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.explore-restaurant {
+    width: 200px;
+    border: black solid 1px;
+}
+
+.explore-restaurant p {
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+
+/* ************************************************************************** */
+
+
+/* SECTION FONCTIONNEMENT */
+
+
+/* ************************************************************************** */
+
+.functionning {
+    /* on donne un nom à nos zones du grid: */
+    grid-area: functionning;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.content-functionning {
+    width: 60vw;
+    max-width: 1024px;
+    min-width: 290px;
+    height: auto;
+    padding-bottom: 40px;
+    border: black solid 1px;
+}
+
+.content-functionning h2 {
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+
+/* TITRES ET ICONES */
+
+.place-choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    width: 75%;
+    background-color: salmon;
+}
+
+.choice-rest {
+    position: relative;
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border: royalblue 1px solid;
+}
+
+.un {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: teal 2px solid;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 205px;
+}
+
+.icon-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+
+/* section titre et icone liste */
+
+.compose-menu {
+    position: relative;
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border: royalblue 1px solid;
+}
+
+.deux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: teal 2px solid;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 205px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+
+/* section titre et icone store */
+
+.enjoy-menu {
+    position: relative;
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border: royalblue 1px solid;
+}
+
+.trois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: teal 2px solid;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 205px;
+}
+
+.icon-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+
+/* ************************************************************************** */
+
+
+/* SECTION MENUS */
+
+
+/* ************************************************************************** */
+
+.menus {
+    grid-area: menus;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(150, 208, 241);
+}
+
+.content-menus {
+    width: 60vw;
+    max-width: 1024px;
+    min-width: 290px;
+    height: auto;
+    border: black solid 1px;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube-menu {
+    position: relative;
+    width: 290px;
+    background-color: thistle;
+    border: blue 2px solid;
+}
+
+.new {
+    position: relative;
+    background-color: blue;
+}
+
+.text-new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 6px 6px 6px;
+    color: navy;
+    background-color: greenyellow;
+}
+
+.details-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "details-menu-titres details-menu-coeur";
+}
+
+.details-menu-titres {
+    grid-area: details-menu-titres;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.details-menu-titres h3 {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.details-menu-titres p {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.details-menu-coeur {
+    grid-area: details-menu-coeur;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 67px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* ************************************************************************** */
+
+
+/* SECTION FOOTER */
+
+
+/* ************************************************************************** */
+
+.footer {
+    /* on donne un nom à nos zones du grid: */
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    background-color: rgb(166, 157, 223);
+}
+
+.content-footer {
+    width: 60vw;
+    max-width: 1024px;
+    min-width: 290px;
+    height: 100%;
+    border: black solid 1px;
+}
+
+.content-footer h3 {
+    font-family: Shrikhand, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+.content-footer p {
+    margin: 0px;
+}
+
+.proposal-rest {
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    font-weight: 500;
+    border: royalblue 1px solid;
+}
+
+.icon-ustensils {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 21px;
+}
+
+.choose-partner {
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    font-weight: 500;
+    border: royalblue 1px solid;
+}
+
+.icon-handshake {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.legal-notice {
+    width: 216px;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    border: royalblue 1px solid;
+}
+
+.contact {
+    width: 216px;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    border: royalblue 1px solid;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+/* ************************************************************************** */
+
+
+/* MEDIA QUERIES */
+
+
+/* ************************************************************************** */
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+/* VERSION TABLETTE */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .content-functionning {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .place-choices {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .content-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .logo {
+        height: 256px;
+    }
+    .logo h1 {
+        font-size: 80px;
+    }
+    .content-logo {
+        min-width: 726px;
+    }
+    .content-place {
+        min-width: 726px;
+    }
+    .content-book-section {
+        min-width: 726px;
+    }
+    .content-functionning {
+        display: flex;
+        flex-direction: column;
+        min-width: 726px;
+    }
+    .choices {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 712px;
+    }
+    .menus {
+        height: 100%;
+        max-height: 1000px;
+    }
+    .content-menus {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-width: 726px;
+        height: 705px;
+    }
+    .row1 {
+        flex-direction: row;
+    }
+    .row2 {
+        flex-direction: row;
+        padding-bottom: 40px;
+    }
+    .footer {
+        height: 256px;
+    }
+    .content-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 726px;
+    }
+    .content-footer h3 {
+        font-size: 28px;
+    }
+}
