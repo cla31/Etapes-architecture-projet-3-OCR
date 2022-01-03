@@ -1,0 +1,375 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 4fr 6fr 15fr 3fr;
+  grid-template-areas: "logo" "place" "book-section" "functionning" "menus" "footer";
+  border: black solid 2px;
+  /* SECTION LOGO */
+  /* SECTION PLACE */
+  /* SECTION BOOK-SECTION */
+  /* SECTION FUNCTIONNING */
+  /* SECTION MENUS */
+  /* SECTION FOOTER */
+}
+.container .logo {
+  /* on donne un nom à nos zones du grid: */
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.container .place {
+  /* on donne un nom à nos zones du grid: */
+  grid-area: place;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+}
+.container .book-section {
+  /* on donne un nom à nos zones du grid: */
+  grid-area: book-section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+.container .functionning {
+  /* on donne un nom à nos zones du grid: */
+  grid-area: functionning;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}
+.container .menus {
+  grid-area: menus;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #96d0f1;
+}
+.container .footer {
+  /* on donne un nom à nos zones du grid: */
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a69ddf;
+}
+
+.content-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+  font-family: Shrikhand, "Arial Black", Arial, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  max-width: 1024px;
+  min-width: 290px;
+  border: black solid 1px;
+}
+
+.content-place {
+  height: auto;
+  background-color: darkturquoise;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  max-width: 1024px;
+  min-width: 290px;
+  border: black solid 1px;
+}
+.content-place__bloc-map-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-place__map-icon {
+  padding-bottom: 4px;
+}
+.content-place__title-map-icon {
+  padding-left: 10px;
+}
+
+.content-book-section {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: plum;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  max-width: 1024px;
+  min-width: 290px;
+  border: black solid 1px;
+}
+.content-book-section h2 {
+  font-size: 25px;
+}
+.content-book-section p {
+  text-align: center;
+  font-weight: 100;
+}
+.content-book-section__explore-restaurant {
+  width: 200px;
+  border: black solid 1px;
+}
+.content-book-section__explore-restaurant p {
+  font-weight: 500;
+}
+
+.content-functionning {
+  height: auto;
+  padding-bottom: 40px;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  width: 60vw;
+  max-width: 1024px;
+  min-width: 290px;
+  border: black solid 1px;
+}
+.content-functionning h2 {
+  font-size: 25px;
+}
+.content-functionning__place-choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 12px;
+  font-weight: 500;
+  width: 75%;
+  background-color: salmon;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+.choices__choice-rest {
+  position: relative;
+  width: 216px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  border: royalblue 1px solid;
+}
+.choices__un {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: teal 2px solid;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 205px;
+}
+.choices__icon-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+.choices__compose-menu {
+  position: relative;
+  width: 216px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  border: royalblue 1px solid;
+}
+.choices__deux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: teal 2px solid;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 205px;
+}
+.choices__icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+.choices__enjoy-menu {
+  position: relative;
+  width: 216px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  border: royalblue 1px solid;
+}
+.choices__trois {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: teal 2px solid;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 205px;
+}
+.choices__icon-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.content-menus {
+  min-width: 290px;
+  height: auto;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  width: 60vw;
+  max-width: 1024px;
+  min-width: 290px;
+  border: black solid 1px;
+}
+.content-menus__row1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-menus__row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube-menu {
+  position: relative;
+  width: 290px;
+  background-color: thistle;
+  border: blue 2px solid;
+}
+.cube-menu .img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.cube-menu__new {
+  position: relative;
+  background-color: blue;
+}
+.cube-menu__text-new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 6px 6px 6px;
+  color: navy;
+  background-color: greenyellow;
+}
+.cube-menu__details-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "details-menu-titres details-menu-coeur";
+}
+.cube-menu__details-menu-titles {
+  grid-area: details-menu-titres;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.cube-menu__details-menu-titles h3 {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.cube-menu__details-menu-titles p {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-weight: 100;
+}
+.cube-menu__details-menu-heart {
+  grid-area: details-menu-coeur;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 67px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.content-footer {
+  height: 100%;
+  width: 60vw;
+  max-width: 1024px;
+  min-width: 290px;
+  border: black solid 1px;
+}
+.content-footer h3 {
+  font-family: Shrikhand, "Arial Black", Arial, Verdana, sans-serif;
+}
+.content-footer p {
+  margin: 0px;
+}
+.content-footer__proposal-rest {
+  width: 216px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  font-weight: 500;
+  border: royalblue 1px solid;
+}
+.content-footer__icon-ustensils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 21px;
+}
+.content-footer__choose-partner {
+  width: 216px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  font-weight: 500;
+  border: royalblue 1px solid;
+}
+.content-footer__icon-handshake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+.content-footer__legal-notice {
+  width: 216px;
+  border: royalblue 1px solid;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+.content-footer__contact {
+  width: 216px;
+  border: royalblue 1px solid;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
