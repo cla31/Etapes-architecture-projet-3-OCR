@@ -1,0 +1,85 @@
+// MIXINS
+@mixin font-logo {
+    font-family: Shrikhand, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+@mixin font-content {
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+// Pour achitecturer la page avec ses principaux blocs
+@mixin content-block {
+    width: 60vw;
+    max-width: 1024px;
+    min-width: 290px;
+    border: black solid 1px;
+}
+
+@mixin center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin blocks-page($grid-area, $background-color) {
+    grid-area: $grid-area;
+    @include center-row;
+    background-color: $background-color;
+}
+
+//Style contenu
+//section fonctionnement
+@mixin place-icon {
+    @include center-row;
+    padding-right: 15px;
+}
+
+@mixin title-icon-position {
+    position: relative;
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border: royalblue 1px solid;
+}
+
+@mixin style-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: teal 2px solid;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 205px;
+}
+
+//section Restaurants
+@mixin place-row {
+    @include center-column;
+    justify-content: center;
+}
+
+//Footer 
+@mixin child-footer-icon {
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include font-content();
+    font-weight: 500;
+    border: royalblue 1px solid;
+}
+
+@mixin child-footer {
+    width: 216px;
+    border: royalblue 1px solid;
+    @include font-content;
+}

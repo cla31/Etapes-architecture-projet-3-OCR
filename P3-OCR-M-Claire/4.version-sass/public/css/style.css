@@ -85,6 +85,60 @@ body {
   border: black solid 1px;
 }
 
+.content-footer {
+  height: 100%;
+  width: 60vw;
+  max-width: 1024px;
+  min-width: 290px;
+  border: black solid 1px;
+}
+.content-footer h3 {
+  font-family: Shrikhand, "Arial Black", Arial, Verdana, sans-serif;
+}
+.content-footer p {
+  margin: 0px;
+}
+.content-footer__proposal-rest {
+  width: 216px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  font-weight: 500;
+  border: royalblue 1px solid;
+}
+.content-footer__icon-ustensils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 21px;
+}
+.content-footer__choose-partner {
+  width: 216px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+  font-weight: 500;
+  border: royalblue 1px solid;
+}
+.content-footer__icon-handshake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+.content-footer__legal-notice {
+  width: 216px;
+  border: royalblue 1px solid;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+.content-footer__contact {
+  width: 216px;
+  border: royalblue 1px solid;
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+
 .content-place {
   height: auto;
   background-color: darkturquoise;
@@ -316,60 +370,6 @@ body {
   height: 67px;
   padding-right: 15px;
   padding-bottom: 10px;
-}
-
-.content-footer {
-  height: 100%;
-  width: 60vw;
-  max-width: 1024px;
-  min-width: 290px;
-  border: black solid 1px;
-}
-.content-footer h3 {
-  font-family: Shrikhand, "Arial Black", Arial, Verdana, sans-serif;
-}
-.content-footer p {
-  margin: 0px;
-}
-.content-footer__proposal-rest {
-  width: 216px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
-  font-weight: 500;
-  border: royalblue 1px solid;
-}
-.content-footer__icon-ustensils {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 21px;
-}
-.content-footer__choose-partner {
-  width: 216px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
-  font-weight: 500;
-  border: royalblue 1px solid;
-}
-.content-footer__icon-handshake {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 15px;
-}
-.content-footer__legal-notice {
-  width: 216px;
-  border: royalblue 1px solid;
-  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
-}
-.content-footer__contact {
-  width: 216px;
-  border: royalblue 1px solid;
-  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+// FOOTER
+.content-footer {
+    height: 100%;
+    @include content-block;
+    h3 {
+        @include font-logo
+    }
+    p {
+        margin: 0px;
+    }
+    &__proposal-rest {
+        @include child-footer-icon;
+    }
+    &__icon-ustensils {
+        @include center-row;
+        padding-right: 21px;
+    }
+    &__choose-partner {
+        @include child-footer-icon;
+    }
+    &__icon-handshake {
+        @include center-row;
+        padding-right: 15px;
+    }
+    &__legal-notice {
+        @include child-footer;
+    }
+    &__contact {
+        @include child-footer;
+    }
+}

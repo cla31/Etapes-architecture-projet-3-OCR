@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+// ARCHITECTURE ET STYLE DES BLOCS PRINCIPAUX DANS LA PAGE
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 4fr 6fr 15fr 3fr;
+    grid-template-areas: "logo" "place" "book-section" "functionning" "menus" "footer";
+    border: black solid 2px;
+    /* SECTION LOGO */
+    .logo {
+        /* on donne un nom à nos zones du grid: */
+        @include blocks-page(logo, red);
+    }
+    /* SECTION PLACE */
+    .place {
+        /* on donne un nom à nos zones du grid: */
+        @include blocks-page(place, palevioletred);
+    }
+    /* SECTION BOOK-SECTION */
+    .book-section {
+        /* on donne un nom à nos zones du grid: */
+        @include blocks-page(book-section, grey);
+    }
+    /* SECTION FUNCTIONNING */
+    .functionning {
+        /* on donne un nom à nos zones du grid: */
+        @include blocks-page(functionning, yellow);
+    }
+    /* SECTION MENUS */
+    .menus {
+        @include blocks-page(menus, rgb(150, 208, 241));
+    }
+    /* SECTION FOOTER */
+    .footer {
+        /* on donne un nom à nos zones du grid: */
+        @include blocks-page(footer, rgb(166, 157, 223));
+    }
+}

@@ -1,0 +1,9 @@
+// HEADER
+.content-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    @include font-logo;
+    @include center-row;
+    @include content-block;
+}
