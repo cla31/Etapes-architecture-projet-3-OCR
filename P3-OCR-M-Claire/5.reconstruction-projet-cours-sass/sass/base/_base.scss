@@ -1,0 +1,22 @@
+// Pas de padding et de margin sur chacun de des éléments
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    // hérite de la propriété de l'élément parent (par exemple si parent est border-box, alors je serai border-box )
+    box-sizing: inherit;
+}
+
+// Pour pouvoir gérer l'unité rem, cf typographie
+html {
+    // 10px div by def of 16px
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    // background: $colour-secondary;
+    background-color: aquamarine;
+    border: rgb(214, 22, 134) solid 3px;
+}

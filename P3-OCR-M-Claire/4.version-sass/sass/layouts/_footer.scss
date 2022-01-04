@@ -11,6 +11,10 @@
     }
     p {
         margin: 0px;
+        // version desktop
+        @media screen and (min-width: 992px) {
+            font-size: 10px;
+        }
     }
     &__proposal-rest {
         @include child-footer-icon;
@@ -46,3 +50,13 @@
         min-width: 726px;
     }
 }
+
+// .place-for-desktop {
+//     // version desktop
+//     @media screen and (min-width: 992px) {
+//         display: flex;
+//         justify-content: space-around;
+//         align-items: center;
+//         width: 720px;
+//     }
+// }

@@ -75,11 +75,19 @@
     align-items: center;
     @include font-content();
     font-weight: 500;
-    border: royalblue 1px solid;
+    // border: royalblue 1px solid;
 }
 
 @mixin child-footer {
     width: 216px;
-    border: royalblue 1px solid;
+    // border: royalblue 1px solid;
     @include font-content;
+    // version tablette
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        padding-left: 35px;
+    }
+    //version desktop
+    @media screen and (min-width: 992px) {
+        padding-left: 35px;
+    }
 }
