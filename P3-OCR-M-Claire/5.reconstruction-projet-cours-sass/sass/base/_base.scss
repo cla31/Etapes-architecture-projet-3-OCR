@@ -1,4 +1,12 @@
 // Pas de padding et de margin sur chacun de des éléments
+// on fait une sorte de reset.
+// On remet à zéro les marges et le padding qui sont ajoutées implicitement par le navigateur.
+// C'est le même principe que d'importer un normalize.css ou un reset.css comme on trouve sur internet.
+// Mais ça c'est juste pour partir d'une base propre et ensuite remettre une margin ou un padding qu'on aura choisi plus tard dans le code
+// Comme ton sélecteur de classe .header__logo est plus spécifique que le sélecteur * qui lui est très généraliste, il prend le dessus et s'applique
+// L'intérêt c'est que pour tous les futurs éléments de ta page pour lesquels tu n'auras pas défini un margin ou un padding manuellement, tu t'assures qu'ils seront bien à 0 pour chacun (et pas 5 ou 10px rajoutés par défaut par le navigateur alors que t'as jamais voulu ça)
+// En gros, les règles dans les * c'est ta couche d'apprêt, et toutes les autres règles c'est ta peinture
+// cf __header.scss
 *,
 *::after,
 *::before {
@@ -16,7 +24,7 @@ html {
 
 body {
     box-sizing: border-box;
-    // background: $colour-secondary;
-    background-color: aquamarine;
+    background: $colour-secondary;
+    // background-color: aquamarine;
     border: rgb(214, 22, 134) solid 3px;
 }

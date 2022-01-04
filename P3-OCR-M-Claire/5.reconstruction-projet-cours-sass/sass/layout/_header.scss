@@ -1,15 +1,18 @@
 .header {
     border: rgb(78, 68, 68) 5px solid;
-    // background: $colour-primary;
-    // height: 10rem;
-    // display: flex;
-    // align-items: center;
-    // flex-wrap: wrap;
-    // width: 100%;   
+    background: $colour-primary;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    // Comme ton sélecteur de classe .header__logo est plus spécifique que le sélecteur * qui lui est très généraliste, il prend le dessus et s'applique
+    // L'intérêt c'est que pour tous les futurs éléments de ta page pour lesquels tu n'auras pas défini un margin ou un padding manuellement, tu t'assures qu'ils seront bien à 0 pour chacun (et pas 5 ou 10px rajoutés par défaut par le navigateur alors que t'as jamais voulu ça)
+    // En gros, les règles dans les * c'est ta couche d'apprêt, et toutes les autres règles c'est ta peinture
     &__logo {
         font-size: 7rem;
         color: $colour-secondary;
         margin-left: 10rem;
-        // @include heading-shadow($colour-white);
+        @include heading-shadow($colour-white);
     }
 }
