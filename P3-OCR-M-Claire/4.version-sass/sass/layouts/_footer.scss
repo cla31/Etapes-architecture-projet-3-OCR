@@ -3,7 +3,11 @@
     height: 100%;
     @include content-block;
     h3 {
-        @include font-logo
+        @include font-logo;
+        // version desktop
+        @media screen and (min-width: 992px) {
+            font-size: 28px;
+        }
     }
     p {
         margin: 0px;
@@ -27,5 +31,18 @@
     }
     &__contact {
         @include child-footer;
+    }
+    // version tablette
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        @include center-column;
+        justify-content: center;
+    }
+    // version desktop
+    @media screen and (min-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 726px;
     }
 }

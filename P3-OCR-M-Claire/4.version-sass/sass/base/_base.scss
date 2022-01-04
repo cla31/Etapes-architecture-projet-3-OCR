@@ -20,6 +20,16 @@ body {
     .logo {
         /* on donne un nom à nos zones du grid: */
         @include blocks-page(logo, red);
+        // version Desktop
+        @media screen and (min-width: 992px) {
+            height: 256px;
+        }
+        h1 {
+            // version Desktop
+            @media screen and (min-width: 992px) {
+                font-size: 80px;
+            }
+        }
     }
     /* SECTION PLACE */
     .place {
@@ -39,10 +49,25 @@ body {
     /* SECTION MENUS */
     .menus {
         @include blocks-page(menus, rgb(150, 208, 241));
+        // version Desktop
+        @media screen and (min-width: 992px) {
+            height: 100%;
+            // height: 705px;
+            max-height: 1000px;
+        }
     }
     /* SECTION FOOTER */
     .footer {
         /* on donne un nom à nos zones du grid: */
         @include blocks-page(footer, rgb(166, 157, 223));
+        padding-bottom: 30px;
+        // version tablette
+        // @media screen and (min-width: 992px) {
+        //     height: 256px;
+        // }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            height: 256px;
+        }
     }
 }

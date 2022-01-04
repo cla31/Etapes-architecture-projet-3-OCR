@@ -1,167 +1,214 @@
-@import "./utils/mixins.scss";
-@import "./base/base.scss";
-@import "./layouts/header.scss";
-@import "./layouts/footer.scss";
-// STYLE ET MISE EN FORME DU BLOC ENFANT DANS CHACUN DES BLOCS PRINCIPAUX
-// section Paris, Belleville
-.content-place {
-    height: auto;
-    background-color: darkturquoise;
-    @include font-content;
-    @include center-row;
-    @include content-block;
-    &__bloc-map-icon {
+    @import "./utils/mixins.scss";
+    @import "./base/base.scss";
+    @import "./layouts/header.scss";
+    @import "./layouts/footer.scss";
+    // STYLE ET MISE EN FORME DU BLOC ENFANT DANS CHACUN DES BLOCS PRINCIPAUX
+    // section Paris, Belleville
+    .content-place {
+        height: auto;
+        background-color: darkturquoise;
+        @include font-content;
         @include center-row;
+        @include content-block;
+        &__bloc-map-icon {
+            @include center-row;
+        }
+        &__map-icon {
+            padding-bottom: 4px;
+        }
+        &__title-map-icon {
+            padding-left: 10px;
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            min-width: 726px;
+        }
     }
-    &__map-icon {
-        padding-bottom: 4px;
-    }
-    &__title-map-icon {
-        padding-left: 10px;
-    }
-}
-
-// section "Réserver...convient"
-.content-book-section {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    text-align: center;
-    background-color: plum;
-    @include font-content;
-    @include center-column;
-    @include content-block;
-    h2 {
-        font-size: 25px;
-    }
-    p {
+    
+    // section "Réserver...convient"
+    .content-book-section {
+        padding-top: 30px;
+        padding-bottom: 50px;
         text-align: center;
-        font-weight: 100;
-    }
-    &__explore-restaurant {
-        width: 200px;
-        border: black solid 1px;
-        p {
-            font-weight: 500;
-        }
-    }
-}
-
-// section fonctionnement
-.content-functionning {
-    height: auto;
-    padding-bottom: 40px;
-    @include font-content;
-    @include content-block;
-    h2 {
-        font-size: 25px;
-    }
-    &__place-choices {
-        @include center-row;
-    }
-}
-
-.choices {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 12px;
-    font-weight: 500;
-    width: 75%;
-    background-color: salmon;
-    @include font-content;
-    &__choice-rest {
-        @include title-icon-position;
-    }
-    &__un {
-        @include style-number;
-    }
-    &__icon-mobile {
-        @include place-icon;
-    }
-    &__compose-menu {
-        @include title-icon-position;
-    }
-    &__deux {
-        @include style-number;
-    }
-    &__icon-list {
-        @include place-icon;
-    }
-    &__enjoy-menu {
-        @include title-icon-position;
-    }
-    &__trois {
-        @include style-number;
-    }
-    &__icon-store {
-        @include place-icon;
-    }
-}
-
-// section menus
-.content-menus {
-    min-width: 290px;
-    height: auto;
-    @include font-content;
-    @include content-block;
-    &__row1 {
-        @include place-row;
-    }
-    &__row2 {
-        @include place-row;
-    }
-}
-
-.cube-menu {
-    position: relative;
-    width: 290px;
-    background-color: thistle;
-    border: blue 2px solid;
-    .img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    &__new {
-        position: relative;
-        background-color: blue;
-    }
-    &__text-new {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding: 6px 6px 6px 6px;
-        color: navy;
-        background-color: greenyellow;
-    }
-    &__details-menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "details-menu-titres details-menu-coeur";
-    }
-    &__details-menu-titles {
-        grid-area: details-menu-titres;
-        padding-left: 10px;
-        padding-bottom: 20px;
-        h3 {
-            font-size: 14px;
-            margin-bottom: 0px;
+        background-color: plum;
+        @include font-content;
+        @include center-column;
+        @include content-block;
+        h2 {
+            font-size: 25px;
         }
         p {
-            margin-top: 3px;
-            margin-bottom: 0px;
-            font-size: 12px;
+            text-align: center;
             font-weight: 100;
         }
+        &__explore-restaurant {
+            width: 200px;
+            border: black solid 1px;
+            p {
+                font-weight: 500;
+            }
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            min-width: 726px;
+        }
     }
-    &__details-menu-heart {
-        grid-area: details-menu-coeur;
+    
+    // section fonctionnement
+    .content-functionning {
+        height: auto;
+        padding-bottom: 40px;
+        @include font-content;
+        @include content-block;
+        h2 {
+            font-size: 25px;
+        }
+        &__place-choices {
+            @include center-row;
+            // version tablette
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+        // version tablette
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            @include center-column;
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 726px;
+        }
+    }
+    
+    .choices {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 67px;
-        padding-right: 15px;
-        padding-bottom: 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 12px;
+        font-weight: 500;
+        width: 75%;
+        background-color: salmon;
+        @include font-content;
+        &__choice-rest {
+            @include title-icon-position;
+        }
+        &__un {
+            @include style-number;
+        }
+        &__icon-mobile {
+            @include place-icon;
+        }
+        &__compose-menu {
+            @include title-icon-position;
+        }
+        &__deux {
+            @include style-number;
+        }
+        &__icon-list {
+            @include place-icon;
+        }
+        &__enjoy-menu {
+            @include title-icon-position;
+        }
+        &__trois {
+            @include style-number;
+        }
+        &__icon-store {
+            @include place-icon;
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 712px;
+        }
     }
-}
+    
+    // section menus
+    .content-menus {
+        min-width: 290px;
+        height: auto;
+        @include font-content;
+        @include content-block;
+        &__row1 {
+            @include place-row;
+            // version desktop
+            @media screen and (min-width: 992px) {
+                flex-direction: row;
+            }
+        }
+        &__row2 {
+            @include place-row;
+            // version desktop
+            @media screen and (min-width: 992px) {
+                flex-direction: row;
+                padding-bottom: 40px;
+            }
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            min-width: 726px;
+            height: 705px;
+        }
+    }
+    
+    .cube-menu {
+        position: relative;
+        width: 290px;
+        background-color: thistle;
+        border: blue 2px solid;
+        .img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        &__new {
+            position: relative;
+            background-color: blue;
+        }
+        &__text-new {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 6px 6px 6px 6px;
+            color: navy;
+            background-color: greenyellow;
+        }
+        &__details-menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "details-menu-titres details-menu-coeur";
+        }
+        &__details-menu-titles {
+            grid-area: details-menu-titres;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            h3 {
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+            p {
+                margin-top: 3px;
+                margin-bottom: 0px;
+                font-size: 12px;
+                font-weight: 100;
+            }
+        }
+        &__details-menu-heart {
+            grid-area: details-menu-coeur;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 67px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+        }
+    }

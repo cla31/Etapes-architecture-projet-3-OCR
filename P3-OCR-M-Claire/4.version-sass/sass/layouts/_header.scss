@@ -6,4 +6,8 @@
     @include font-logo;
     @include center-row;
     @include content-block;
+    // version Desktop
+    @media screen and (min-width: 992px) {
+        min-width: 726px;
+    }
 }
