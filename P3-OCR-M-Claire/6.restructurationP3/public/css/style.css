@@ -225,7 +225,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .hero__stack {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 }
 .hero__button {
@@ -384,23 +384,14 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .card {
-    height: 300px;
+    height: 280px;
     margin: 30px;
   }
 }
-.card__header {
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-}
 .card__header img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 100%;
-  transform: translate(-50%, -50%);
+  height: 200px;
+  object-fit: cover;
 }
 .card__header--new {
   position: relative;
