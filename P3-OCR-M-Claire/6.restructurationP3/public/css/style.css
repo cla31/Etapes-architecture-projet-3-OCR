@@ -60,6 +60,10 @@ footer {
 .hero__text {
   font-weight: 100;
 }
+.hero__button a {
+  text-decoration: none;
+  color: black;
+}
 
 .tabs {
   font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
