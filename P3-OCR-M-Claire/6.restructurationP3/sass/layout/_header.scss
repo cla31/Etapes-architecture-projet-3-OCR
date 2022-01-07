@@ -3,15 +3,11 @@
     flex-direction: column;
     align-items: center;
     &__logo {
-        /* on donne un nom à nos zones du grid: */
-        // grid-area: logo;
-        text-align: center;
         background-color: red;
         // version tablette
         @media screen and (min-width: 768px) and (max-width: 992px) {
             display: flex;
             flex-direction: column;
-            // align-items: center;
             justify-content: center;
             height: 132px;
         }
@@ -20,7 +16,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // align-items: center;
             height: 182px;
         }
     }

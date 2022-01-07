@@ -26,8 +26,8 @@
     width: 216px;
     @include item;
     justify-content: flex-start;
-    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
-    font-weight: 500;
+    // font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    // font-weight: 500;
     // border: royalblue 1px solid;
     &__icon-ustensils {
         @include icon;
@@ -39,8 +39,8 @@
     width: 216px;
     @include item;
     justify-content: flex-start;
-    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
-    font-weight: 500;
+    // font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    // font-weight: 500;
     // border: royalblue 1px solid;
     &__icon-handshake {
         @include icon;
