@@ -1,0 +1,49 @@
+.footer {
+    // version tablette
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        // version desktop
+        @media screen and (min-width: 992px) {
+            text-align: center;
+        }
+    }
+    &__items {
+        // version desktop
+        @include items-responsive;
+    }
+    // version desktop
+    @media screen and (min-width: 992px) {
+        height: 216px;
+    }
+}
+
+.proposal {
+    width: 216px;
+    @include item;
+    justify-content: flex-start;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    font-weight: 500;
+    // border: royalblue 1px solid;
+    &__icon-ustensils {
+        @include icon;
+        padding-right: 21px;
+    }
+}
+
+.partner {
+    width: 216px;
+    @include item;
+    justify-content: flex-start;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    font-weight: 500;
+    // border: royalblue 1px solid;
+    &__icon-handshake {
+        @include icon;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,194 @@
+    // complément du header
+    .sidebar {
+        &__item {
+            justify-content: center;
+            width: 100%;
+            @include item;
+            // border: black solid 1px;
+            background-color: rgb(65, 13, 163);
+        }
+        &__icon {
+            @include icon;
+            padding-bottom: 4px;
+        }
+        &__title {
+            padding-left: 10px;
+        }
+    }
+    
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        &__stack {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: center;
+            padding-bottom: 50px;
+            text-align: center;
+            border: black solid 1px;
+            background-color: plum;
+            // version desktop 
+            @media screen and (min-width: 992px) {
+                padding-top: 10px;
+            }
+        }
+        &__button {
+            width: 200px;
+            border: black solid 1px;
+        }
+    }
+    
+    .tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__stack {
+            padding-bottom: 40px;
+            // version tablette
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            // version desktop 
+            // @media screen and (min-width: 992px) {
+            //     height: 180px;
+            // }
+        }
+        &__items {
+            // width: ;
+            font-size: 12px;
+            padding-left: 18px;
+            // version desktop
+            @include items-responsive;
+            // version desktop 
+            @media screen and (min-width: 992px) {
+                height: 180px;
+            }
+        }
+        &__choice {
+            @include title-icon-position;
+        }
+        &__un {
+            @include style-number;
+        }
+        &__icon-mobile {
+            @include icon-tabs;
+        }
+        &__compose {
+            @include title-icon-position;
+        }
+        &__deux {
+            @include style-number;
+        }
+        &__icon-list {
+            @include icon-tabs;
+        }
+        &__enjoy {
+            @include title-icon-position;
+        }
+        &__trois {
+            @include style-number;
+        }
+        &__icon-store {
+            @include icon-tabs;
+        }
+    }
+    
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: chartreuse;
+        padding-bottom: 50px;
+        // height: 1340px;
+        // version desktop 
+        @media screen and (min-width: 992px) {
+            padding-bottom: 30px;
+        }
+        &__row1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // version desktop 
+            @media screen and (min-width: 992px) {
+                flex-direction: row;
+                // justify-content: space-around;
+                padding-bottom: 30px;
+            }
+        }
+        &__row2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width: 992px) {
+                flex-direction: row;
+                // justify-content: space-around;
+            }
+        }
+    }
+    
+    // .new {
+    //     position: relative;
+    //     background-color: blue;
+    // }
+    // .text-new {
+    //     position: absolute;
+    //     top: 10px;
+    //     right: 10px;
+    //     padding: 6px 6px 6px 6px;
+    //     color: navy;
+    //     background-color: greenyellow;
+    // }
+    .card {
+        position: relative;
+        width: 290px;
+        background-color: thistle;
+        border: blue 2px solid;
+        // version desktop 
+        @media screen and (min-width: 992px) {
+            height: 300px;
+            // margin-right: 30px;
+            margin: 30px;
+        }
+        &__header {
+            @include img-ratio;
+            &--new {
+                position: relative;
+                background-color: blue;
+            }
+            &--text-new {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                padding: 6px 6px 6px 6px;
+                color: navy;
+                background-color: greenyellow;
+            }
+        }
+        &__body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "titles heart";
+        }
+        &__titles {
+            grid-area: titles;
+            padding-left: 10px;
+            padding-bottom: 20px;
+        }
+        &__action {
+            grid-area: heart;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 67px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+        }
+    }

@@ -1,0 +1,64 @@
+@mixin item {
+    display: flex;
+    align-items: center;
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    // background-color: rgb(163, 13, 130);
+}
+
+@mixin icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// **********************************************
+// partie fonctionnement: placement et style  chiffre + titre + icone
+@mixin icon-tabs {
+    @include icon;
+    padding-right: 15px;
+}
+
+@mixin title-icon-position {
+    position: relative;
+    width: 216px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border: royalblue 1px solid;
+}
+
+@mixin style-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: teal 2px solid;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 205px;
+}
+
+// **********************************************
+@mixin img-ratio {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    & img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin items-responsive {
+    @media screen and (min-width: 992px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
