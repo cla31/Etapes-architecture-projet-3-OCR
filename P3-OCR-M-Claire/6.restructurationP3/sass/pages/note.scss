@@ -1,0 +1,167 @@
+// .stack-position {
+//     background-color: green;
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+// }
+.sidebar {
+    &__logo--page {
+        display: flex;
+        width: 100%;
+        // version tablette
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            display: flex;
+            flex-direction: row;
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        // version tablette
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            width: 5%;
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            width: 5%;
+        }
+    }
+    &__place-title-page {
+        display: flex;
+        justify-content: center;
+        border: black 1px solid;
+        width: 90%;
+        // version tablette
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            width: 95%;
+        }
+        // version desktop
+        @media screen and (min-width: 992px) {
+            width: 95%;
+        }
+    }
+    &__title-page {
+        background-color: hotpink;
+        // width: 90%;
+        // version tablette
+        // @media screen and (min-width: 768px) and (max-width: 992px) {
+        //     width: 100%;
+        // }
+        // padding-left: 20%;
+        h1 {
+            // version tablette
+            // @media screen and (min-width: 768px) and (max-width: 992px) {
+            //     margin-top: 0;
+            //     color: lime;
+            // }
+            // version desktop
+            @media screen and (min-width: 992px) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// .relative-position {
+//     position: relative;
+// }
+.hero-page {
+    display: flex;
+    justify-content: center;
+    // width: 100%;
+    // background-color: hotpink;
+    &__img {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100%;
+            // height: 200px;
+            height: auto;
+            object-fit: cover;
+            // position: absolute;
+            // z-index: 1;
+        }
+    }
+}
+
+.position-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: hotpink;
+    position: relative;
+    top: -40px;
+    border-radius: 40px 40px 0 0;
+    // z-index: 4;
+    // top: 800px;
+}
+
+.stack {
+    border: black 1px solid;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title heart";
+    &__title {
+        grid-area: title;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        // background-color: brown;
+    }
+    &__action {
+        grid-area: heart;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 73px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        // background-color: cadetblue;
+    }
+    // version tablette
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 70%;
+    }
+}
+
+.stack-section {
+    border: black 1px solid;
+    padding-left: 10px;
+    &__title h4 {
+        border-bottom: lawngreen solid 2px;
+    }
+    &__items {
+        width: 98%;
+        border: red 2px solid;
+        margin-bottom: 20px;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        border: lightslategray 2px solid;
+    }
+}
+
+.place-stack-section {
+    // version tablette
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    // version desktop 
+    @media screen and (min-width: 992px) {
+        display: flex;
+        justify-content: space-around;
+    }
+}

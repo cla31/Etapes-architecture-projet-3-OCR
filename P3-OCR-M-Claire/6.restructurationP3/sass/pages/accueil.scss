@@ -1,4 +1,4 @@
-    // complément du header
+    // complément du header sur page d'accueil
     .sidebar {
         &__item {
             justify-content: center;
@@ -16,6 +16,7 @@
         }
     }
     
+    // complément du header sur page d'accueil
     .hero {
         display: flex;
         align-items: center;
@@ -54,7 +55,7 @@
             }
         }
         &__items {
-            font-size: 12px;
+            // font-size: 12px;
             padding-left: 18px;
             // version desktop
             @include items-responsive;
@@ -73,6 +74,8 @@
         }
         &__compose {
             @include title-icon-position;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         &__deux {
             @include style-number;

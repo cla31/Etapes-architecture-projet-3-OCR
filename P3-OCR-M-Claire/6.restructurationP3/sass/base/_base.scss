@@ -13,12 +13,25 @@
 header {
     /* on donne un nom aux zones du grid: */
     grid-area: header;
-    background-color: red;
+    // background-color: red;
 }
 
+// Main page d'accueil
 .main-home {
     grid-area: main;
     background-color: rgb(77, 185, 247);
+}
+
+// Main page note enchantée
+.main-page {
+    grid-area: main;
+    background-color: rgb(77, 185, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // position: relative;
+    // top: -10px;
 }
 
 footer {
