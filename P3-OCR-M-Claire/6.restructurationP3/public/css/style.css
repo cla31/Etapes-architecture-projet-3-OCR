@@ -475,7 +475,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .sidebar__arrow {
-    width: 5%;
+    width: 4%;
   }
 }
 .sidebar__place-title-page {
@@ -491,7 +491,7 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .sidebar__place-title-page {
-    width: 95%;
+    width: 96%;
   }
 }
 .sidebar__title-page {
