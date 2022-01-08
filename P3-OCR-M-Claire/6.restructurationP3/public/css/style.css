@@ -590,4 +590,17 @@ footer {
   }
 }
 
+.position-button-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+}
+.position-button-page__button-page {
+  width: 50%;
+  text-align: center;
+  border: mediumorchid 2px solid;
+}
+
 /*# sourceMappingURL=style.css.map */

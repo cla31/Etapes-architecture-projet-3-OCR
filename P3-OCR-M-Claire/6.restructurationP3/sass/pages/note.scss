@@ -1,9 +1,4 @@
-// .stack-position {
-//     background-color: green;
-//     // display: flex;
-//     // justify-content: center;
-//     // align-items: center;
-// }
+// Header
 .sidebar {
     &__logo--page {
         display: flex;
@@ -48,18 +43,7 @@
     }
     &__title-page {
         background-color: hotpink;
-        // width: 90%;
-        // version tablette
-        // @media screen and (min-width: 768px) and (max-width: 992px) {
-        //     width: 100%;
-        // }
-        // padding-left: 20%;
         h1 {
-            // version tablette
-            // @media screen and (min-width: 768px) and (max-width: 992px) {
-            //     margin-top: 0;
-            //     color: lime;
-            // }
             // version desktop
             @media screen and (min-width: 992px) {
                 margin-top: 20px;
@@ -68,24 +52,18 @@
     }
 }
 
-// .relative-position {
-//     position: relative;
-// }
+// Main
 .hero-page {
     display: flex;
     justify-content: center;
-    // width: 100%;
     // background-color: hotpink;
     &__img {
         display: flex;
         justify-content: center;
         img {
             width: 100%;
-            // height: 200px;
             height: auto;
             object-fit: cover;
-            // position: absolute;
-            // z-index: 1;
         }
     }
 }
@@ -163,5 +141,21 @@
     @media screen and (min-width: 992px) {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+.position-button-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    &__button-page {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        width: 50%;
+        text-align: center;
+        border: mediumorchid 2px solid;
     }
 }
