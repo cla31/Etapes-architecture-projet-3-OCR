@@ -30,7 +30,7 @@
     &__place-title-page {
         display: flex;
         justify-content: center;
-        border: black 1px solid;
+        // border: black 1px solid;
         width: 90%;
         // version tablette
         @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -46,7 +46,6 @@
         h1 {
             // version desktop
             @media screen and (min-width: 992px) {
-                // font-size: 50px;
                 margin-top: 20px;
                 padding-right: 100px;
             }
@@ -56,25 +55,11 @@
 
 // Main
 .hero-page {
-    // display: flex;
-    // justify-content: center;
-    // background-color: hotpink;
     &__img {
-        // display: block;
-        // justify-content: center;
-        // max-height: 100%;
-        // min-height: 30%;
-        // height: auto;
         width: 100%;
-        // height: 50%;
-        // height: 300px;
         background-color: mediumorchid;
-        // max-width: 1400px;
-        // min-width: 310px;
-        // background-image: url(./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
         background-size: cover;
         overflow: hidden;
-        // width: 300px;
         height: 320px;
         // version tablette
         @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -88,19 +73,10 @@
         img {
             width: 100%;
             transform: translate(0px, -50px);
-            // height: 300px;
-            // width: auto;
-            // height: auto;
-            // height: 320px;
-            // height: 100%;
             object-fit: cover;
-            // display: none;
-            // margin: 0 auto;
             // version desktop 
             @media screen and (min-width: 992px) {
                 transform: translate(0%, -40%);
-                // margin-top: -100px;
-                // transform: translate(0px, -20px);
             }
         }
     }
@@ -116,16 +92,14 @@
     position: relative;
     top: -40px;
     border-radius: 40px 40px 0 0;
-    // z-index: 4;
-    // top: 800px;
     // version desktop 
     @media screen and (min-width: 992px) {
-        height: 600px;
+        height: 400px;
     }
 }
 
 .stack {
-    border: black 1px solid;
+    // border: black 1px solid;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
@@ -135,6 +109,10 @@
         padding-left: 10px;
         padding-bottom: 20px;
         // background-color: brown;
+        // version desktop 
+        @media screen and (min-width: 992px) {
+            padding-left: 35px;
+        }
     }
     &__action {
         grid-area: heart;
@@ -145,15 +123,23 @@
         padding-right: 10px;
         padding-bottom: 20px;
         // background-color: cadetblue;
+        // version desktop 
+        @media screen and (min-width: 992px) {
+            padding-right: 34px;
+        }
     }
     // version tablette
     @media screen and (min-width: 768px) and (max-width: 992px) {
         width: 70%;
     }
+    // version desktop 
+    @media screen and (min-width: 992px) {
+        min-width: 90%;
+    }
 }
 
 .stack-section {
-    border: black 1px solid;
+    // border: black 1px solid;
     padding-left: 10px;
     &__title h4 {
         border-bottom: lawngreen solid 2px;
@@ -167,6 +153,14 @@
         display: flex;
         justify-content: space-between;
         border: lightslategray 2px solid;
+    }
+    // version tablette
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        min-width: 50%;
+    }
+    // version desktop 
+    @media screen and (min-width: 992px) {
+        min-width: 28%;
     }
 }
 
@@ -183,6 +177,7 @@
     @media screen and (min-width: 992px) {
         display: flex;
         justify-content: space-around;
+        min-width: 90%;
     }
 }
 
@@ -193,9 +188,6 @@
     align-items: center;
     height: 100px;
     &__button-page {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
         width: 50%;
         text-align: center;
         border: mediumorchid 2px solid;

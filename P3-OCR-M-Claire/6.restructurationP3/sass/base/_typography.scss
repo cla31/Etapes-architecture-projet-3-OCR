@@ -25,6 +25,24 @@
     }
 }
 
+.stack-section {
+    font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+    &__title h4 {
+        font-weight: 100;
+    }
+    &__subtitle {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__description {
+        font-size: 12px;
+        font-weight: 100;
+    }
+    &__item2 {
+        font-weight: 500;
+    }
+}
+
 // Main page d'accueil
 .main-home h2 {
     font-size: 20px;

@@ -63,6 +63,24 @@ footer {
   font-size: 19px;
 }
 
+.stack-section {
+  font-family: Roboto, "Arial Black", Arial, Verdana, sans-serif;
+}
+.stack-section__title h4 {
+  font-weight: 100;
+}
+.stack-section__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+.stack-section__description {
+  font-size: 12px;
+  font-weight: 100;
+}
+.stack-section__item2 {
+  font-weight: 500;
+}
+
 .main-home h2 {
   font-size: 20px;
 }
@@ -151,7 +169,6 @@ footer {
   width: 60vw;
   max-width: 1024px;
   min-width: 290px;
-  border: black solid 1px;
 }
 @media screen and (min-width: 992px) {
   .frame {
@@ -481,7 +498,6 @@ footer {
 .sidebar__place-title-page {
   display: flex;
   justify-content: center;
-  border: black 1px solid;
   width: 90%;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -542,12 +558,11 @@ footer {
 }
 @media screen and (min-width: 992px) {
   .position-stack {
-    height: 600px;
+    height: 400px;
   }
 }
 
 .stack {
-  border: black 1px solid;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
@@ -558,6 +573,11 @@ footer {
   padding-left: 10px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 992px) {
+  .stack__title {
+    padding-left: 35px;
+  }
+}
 .stack__action {
   grid-area: heart;
   display: flex;
@@ -567,14 +587,23 @@ footer {
   padding-right: 10px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 992px) {
+  .stack__action {
+    padding-right: 34px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .stack {
     width: 70%;
   }
 }
+@media screen and (min-width: 992px) {
+  .stack {
+    min-width: 90%;
+  }
+}
 
 .stack-section {
-  border: black 1px solid;
   padding-left: 10px;
 }
 .stack-section__title h4 {
@@ -590,6 +619,16 @@ footer {
   justify-content: space-between;
   border: lightslategray 2px solid;
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .stack-section {
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .stack-section {
+    min-width: 28%;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .place-stack-section {
@@ -604,6 +643,7 @@ footer {
   .place-stack-section {
     display: flex;
     justify-content: space-around;
+    min-width: 90%;
   }
 }
 
