@@ -38,6 +38,10 @@
         &__button {
             width: 200px;
             border: black solid 1px;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
         }
     }
     
@@ -135,6 +139,10 @@
         @media screen and (min-width: 992px) {
             height: 280px;
             margin: 30px;
+        }
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
         }
         &__header {
             // @include img-ratio;

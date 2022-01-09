@@ -86,7 +86,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: sandybrown;
+    background-color: hotpink;
+    // background-color: sandybrown;
     // version desktop 
     @media screen and (min-width: 992px) {
         height: 400px;
@@ -216,6 +217,10 @@
         width: 50%;
         text-align: center;
         border: mediumorchid 2px solid;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
         // version tablette
         @media screen and (min-width: 768px) and (max-width: 992px) {
             width: 30%;
