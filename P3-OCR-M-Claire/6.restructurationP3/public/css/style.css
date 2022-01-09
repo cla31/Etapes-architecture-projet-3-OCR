@@ -517,6 +517,10 @@ footer {
   align-items: center;
   width: 10%;
 }
+.sidebar__arrow a {
+  text-decoration: none;
+  color: black;
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .sidebar__arrow {
     width: 5%;

@@ -18,6 +18,10 @@
         justify-content: center;
         align-items: center;
         width: 10%;
+        a {
+            text-decoration: none;
+            color: black;
+        }
         // version tablette
         @media screen and (min-width: 768px) and (max-width: 992px) {
             width: 5%;
