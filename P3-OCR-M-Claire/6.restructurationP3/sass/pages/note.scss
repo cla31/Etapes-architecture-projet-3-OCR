@@ -82,6 +82,17 @@
     }
 }
 
+.container-stack {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: sandybrown;
+    // version desktop 
+    @media screen and (min-width: 992px) {
+        height: 400px;
+    }
+}
+
 .position-stack {
     display: flex;
     justify-content: center;
@@ -91,10 +102,13 @@
     background-color: hotpink;
     position: relative;
     top: -40px;
+    // bottom: -500px;
     border-radius: 40px 40px 0 0;
     // version desktop 
     @media screen and (min-width: 992px) {
+        // background-size: cover;
         height: 400px;
+        // height: 100%;
     }
 }
 
@@ -123,14 +137,22 @@
         padding-right: 10px;
         padding-bottom: 20px;
         // background-color: cadetblue;
+        // version tablette
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            font-size: 24px;
+            padding-bottom: 5px;
+        }
         // version desktop 
         @media screen and (min-width: 992px) {
             padding-right: 34px;
+            font-size: 28px;
+            padding-bottom: 0px;
         }
     }
     // version tablette
     @media screen and (min-width: 768px) and (max-width: 992px) {
-        width: 70%;
+        // width: 70%;
+        min-width: 90%;
     }
     // version desktop 
     @media screen and (min-width: 992px) {
@@ -182,14 +204,25 @@
 }
 
 .position-button-page {
+    width: 100%;
+    background-color: hotpink;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    // justify-content: center;
     align-items: center;
     height: 100px;
     &__button-page {
         width: 50%;
         text-align: center;
         border: mediumorchid 2px solid;
+        // version tablette
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            width: 30%;
+        }
+        // version desktop 
+        @media screen and (min-width: 992px) {
+            width: 20%;
+        }
     }
 }
