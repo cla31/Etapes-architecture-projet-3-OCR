@@ -61,6 +61,7 @@
 .hero-page {
     &__img {
         width: 100%;
+        max-width: 2000px;
         background-color: mediumorchid;
         background-size: cover;
         overflow: hidden;
